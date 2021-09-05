@@ -1,0 +1,28 @@
+algorithm sentence
+var
+S:string
+V,i,nb,X:integer
+Begin
+// sentence that ends with dot 
+write("give a sentence")
+S:= concat("S",".")
+read(S)
+// Length of a sentence
+X:= length(S)
+write("the number of characters is", X)
+// Number of words
+nb:=1
+for i from 0 to length(S) do
+if S[i]=" " then
+nb:=nb+1
+end for
+write("the number of words is", nb)
+// Number of Vowels
+V:=0
+for i from 0 to length(S) do
+if S[i]="a" or S[i]="e" or S[i]="i" or S[i]="o" or S[i]="u" or S[i]="y" then
+V:=V+1
+end if
+end for
+write("the number of Vowels is", V)
+end
